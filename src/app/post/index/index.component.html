@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Angular CRUD Example - SCHOOL</h1>
+
+    <a href="#" routerLink="/post/create/" class="btn btn-success">Create New User</a>
+    
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>LAST NAME</th>
+        <th>ROL</th>
+      </tr>
+      <tr *ngFor="let user of users">
+        <td>{{ user.Id }}</td>
+        <td>{{ user.Name }}</td>
+        <td>{{ user.LastName }}</td>
+        <td>{{ user.RolName }}</td>
+      </tr>
+    </table>
+ </div>
